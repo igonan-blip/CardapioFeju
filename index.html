@@ -373,7 +373,7 @@ src="https://www.facebook.com/tr?id=872656052321408&ev=PageView&noscript=1"
         if (!nome) return alert("Por favor, digite seu nome");
         if (orderType === 'entrega' && !document.getElementById('endereco').value) return alert("Digite o endereço de entrega");
 
-        let msg = `*NOVO PEDIDO - FEJU DA BUNITA*\n`;
+        let msg = `*MEU PEDIDO - FEJU DA BUNITA*\n`;
         msg += `*Tipo:* ${orderType.toUpperCase()}\n`;
         msg += `*Cliente:* ${nome}\n`;
         
@@ -396,7 +396,7 @@ src="https://www.facebook.com/tr?id=872656052321408&ev=PageView&noscript=1"
         const entregaMsg = orderType === 'entrega' ? "ENTREGA GRÁTIS (40-50 min)" : "RETIRADA (20 min)";
         msg += `\n\n*Status:* ${entregaMsg}`;
 
-        window.open(`https://wa.me/5544997584435?text=${encodeURIComponent(msg)}`, '_blank');
+        window.open(`https://wa.me/5544998113686?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
     renderMenu();
